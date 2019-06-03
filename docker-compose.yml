@@ -1,0 +1,7 @@
+version: "3"
+services:
+  caddy:
+    image: caddy:latest
+    build: .
+    volumes:
+      - .:/root/golf
