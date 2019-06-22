@@ -1,1 +1,6 @@
-/.golf/
+*
+!/.gitignore
+!/Dockerfile
+!/docker-compose.yml
+!/Makefile
+!/README.md

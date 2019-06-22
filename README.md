@@ -5,7 +5,8 @@
 ```
 $ git clone git@github.com:inaniwa3/Dockerfile-for-Anarchy-Golf.git
 $ cd Dockerfile-for-Anarchy-Golf
-$ docker-compose build
-$ docker-compose run --rm caddy
+$ echo "alias caddy='ruby /caddy/caddy.rb'" >> .bashrc
+$ make build
+$ make run
 # caddy update
 ```

@@ -4,4 +4,4 @@ services:
     image: caddy:latest
     build: .
     volumes:
-      - .:/root/golf
+      - .:/root

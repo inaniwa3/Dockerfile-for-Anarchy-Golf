@@ -53,8 +53,7 @@ deb http://archive.debian.org/debian-security wheezy/updates main" \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
+WORKDIR /
+RUN git clone --depth 1 https://github.com/shinh/caddy.git
+
 WORKDIR /root
-RUN git clone --depth 1 https://github.com/shinh/caddy.git \
- && sed -i -e 's!^GOLF_DIR.\+$!GOLF_DIR = File.join(ENV['\''HOME'\''], '\''golf/.golf'\'')!' ~/caddy/caddy.rb \
- && echo alias caddy=\'ruby ~/caddy/caddy.rb\' >> ~/.bashrc
-WORKDIR /root/golf
