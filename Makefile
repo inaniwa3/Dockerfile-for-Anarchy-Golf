@@ -1,4 +1,4 @@
-.PHONY: help
+.PHONY: help build run
 .DEFAULT_GOAL := help
 
 SERVICE := caddy
